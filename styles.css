@@ -23,9 +23,8 @@ h1 {
 
 table {
     width: max-content; /* Adjust the width as needed */
-     /* Set a maximum width if necessary */
+    margin: 20px auto; /* Center the table */
     border-collapse: collapse;
-    margin-top: 20px;
 }
 
 th, td {
@@ -43,8 +42,8 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
-tr:last-child td {
-    border-bottom: none;
+tbody tr:last-child td {
+    border-bottom: 1px solid #ddd; /* Adjusted to ensure the last row has a bottom border */
 }
 
 td:first-child, th:first-child {
@@ -61,12 +60,12 @@ img {
     height: 50px; /* Adjust the height as needed */
 }
 
-#hello{
+#hello {
     width: 90px; /* Adjust the width as needed */
     height: 50px; /* Adjust the height as needed */
 }
 
-#doc{
+#doc {
     width: 90px; /* Adjust the width as needed */
     height: 50px; /* Adjust the height as needed */
 }
