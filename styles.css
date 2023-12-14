@@ -1,0 +1,72 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: max-content; /* Adjust the width as needed */
+     /* Set a maximum width if necessary */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Add borders between table rows and columns */
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:first-child, th:first-child {
+    border-left: 1px solid #ddd;
+}
+
+td:last-child, th:last-child {
+    border-right: 1px solid #ddd;
+}
+
+/* Set a fixed width and height for all images in the table */
+img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+#hello{
+    width: 90px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+#doc{
+    width: 90px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
