@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic URL Example</title>
+</head>
+<body>
+
+<p id="r"></p>
+
+<script>
+    async function a() {
+        try {
+            const currentDate = new Date();
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth() + 1;
+            const day = currentDate.getDate();
+            const url = `https://logs.ivr.fi/channel/flamingo_lindo/${year}/${month}/${day}`;
+
+            const response = await fetch(url);
+            c(await response.text());
+        } catch (error) {
+            document.getElementById("r").innerText = "Error fetching the log.";
+        }
+    }
+
+    function c(data) {
+        const t = /#flamingo_lindo\s+(\S+):/g;
+        const matches = [];
+        let match;
+
+        while ((match = t.exec(data)) !== null) {
+            matches.push(match[1]);
+        }
+
+        const uniqueValues = [...new Set(matches)];
+
+        const resultElement = document.getElementById("r");
+        resultElement.innerHTML = "";
+
+        if (uniqueValues.length > 0) {
+            let charCount = 0;
+            uniqueValues.forEach(function (value) {
+                if (charCount + value.length > 480) {
+                    resultElement.innerHTML += "<br><br>";
+                    charCount = 0;
+                }
+                resultElement.innerHTML += value + " ";
+                charCount += value.length + 1;
+            });
+        } else {
+            resultElement.innerText = "Nothing here.";
+        }
+    }
+
+    window.onload = a;
+</script>
+
+</body>
+</html>
