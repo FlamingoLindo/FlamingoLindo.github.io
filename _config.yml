@@ -21,9 +21,7 @@
 title: Flamingo Lindo
 email: vitorantunes2003@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm Vitor, also known as Flamingo, a Software Engineering student navigating 
-  the complexities of technology and coding. This is where I document my projects and share what I’m 
-  working on as I continue learning and improving. Take a look around and see what I’ve been up to.
+  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: vitor-ferreira-a7a803232
@@ -31,16 +29,11 @@ github_username:  FlamingoLindo
 instagram_username: pastor_zulul
 
 # Build settings
-#theme: minima
-
+theme: minima
+minima:
+  skin: dark
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
-
-remote-theme: jkellytw/minima
-minima: 
-  skin: dark
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
