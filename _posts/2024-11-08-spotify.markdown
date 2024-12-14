@@ -5,6 +5,15 @@ date:   2024-11-08 19:17:58 -0300
 categories: svm spotify python
 ---
 
+# What is this repository about?
+
+During my sixth semester of university I had A.I classes where we had to learn how to user `sklearn` and use the SVM model for a certain pourpose, my grupo had the chalange
+of trying to classify the popularity and genere of brazilian musics, down here you can see what we did and how.
+
+You can find the repository [here](https://github.com/FlamingoLindo/spotify-svm).
+
+---
+
 [PT-BR](https://github.com/FlamingoLindo/spotify-svm) 🇧🇷 | [ENG](https://github.com/FlamingoLindo/spotify-svm/blob/main/ENG/Popularity_Analysis_and_Classification.md) 🇺🇸
 
 ---
