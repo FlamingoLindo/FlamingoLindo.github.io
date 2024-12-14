@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introduction to Selenium/Appium/RobotFramework"
+title:  "ISAR"
 date:   2024-11-29 19:17:58 -0300
 categories: python selenium appium automation
 ---
@@ -18,7 +18,7 @@ You can find the repository [here](https://github.com/FlamingoLindo/Introducao-S
 
 # Here are some snippets of what you can find in there
 
-Unfortunately I only had time to make the tutorial in portuguese, I genuinely want to make this tutorial aviable in english...
+Unfortunately I only had time to make this tutorial in portuguese, I genuinely want to make this tutorial aviable in english...
 
 ## Selenium
 
